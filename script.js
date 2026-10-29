@@ -1,5 +1,5 @@
 // Filter
-const filterBtns = document.querySelectorAll('.filter-btn');
+const filterBtns = document.querySelectorAll('.filter-btn[data-filter]');
 const items = document.querySelectorAll('.item');
 
 filterBtns.forEach(btn => {

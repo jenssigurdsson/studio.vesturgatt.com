@@ -110,6 +110,7 @@ header {
 
 .filters {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
   margin-bottom: 2.5rem;
 }
@@ -124,6 +125,11 @@ header {
   border-radius: 2px;
   cursor: pointer;
   transition: all 0.2s;
+}
+
+a.filter-btn {
+  text-decoration: none;
+  display: inline-block;
 }
 
 .filter-btn:hover {

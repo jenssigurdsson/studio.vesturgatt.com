@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="is"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lufsuljóð Jens</title>
+<style>
+:root{--bg:#f0ebe0;--paper:#faf7f2;--ink:#1a1008;--red:#c0392b;--muted:#6b5a3a;--line:rgba(26,16,8,.15)}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif}
+header{background:var(--ink);color:var(--paper);text-align:center;padding:56px 24px 44px}
+header h1{font-size:clamp(2.5rem,8vw,5.5rem);line-height:1;letter-spacing:-.02em}
+header p{font-style:italic;letter-spacing:.15em;color:rgba(250,247,242,.55);margin-top:12px}
+nav{background:var(--paper);border-bottom:2px solid var(--ink);position:sticky;top:0;z-index:50;display:flex;justify-content:center;overflow-x:auto}
+nav a{display:flex;flex-direction:column;align-items:center;padding:12px 20px;text-decoration:none;color:var(--muted);border-right:1px solid var(--line);font-style:italic;font-size:.78rem;white-space:nowrap}
+nav a:first-child{border-left:1px solid var(--line)}nav a:hover{background:var(--bg);color:var(--ink)}
+nav b{font:700 .65rem 'Courier New',monospace;letter-spacing:.2em;color:var(--red)}
+section{padding:60px 0 40px;border-bottom:2px solid var(--ink)}
+h2{text-align:center;font-weight:400;font-style:italic;font-size:clamp(1.3rem,3vw,2rem);padding:0 24px 40px}
+h2 small{display:block;font:.7rem 'Courier New',monospace;letter-spacing:.4em;text-transform:uppercase;color:var(--red);margin-bottom:6px;font-style:normal}
+.pages{display:flex;flex-wrap:wrap;justify-content:center;gap:32px;padding:0 32px}
+.pg{background:#fff;width:100%;max-width:420px;box-shadow:0 4px 20px rgba(0,0,0,.12);cursor:zoom-in;transition:transform .3s}
+.pg:hover{transform:translateY(-4px)}.pg img{display:block;width:100%;height:auto}
+figcaption{text-align:center;padding:10px;font:.7rem 'Courier New',monospace;letter-spacing:.2em;color:var(--muted);border-top:1px solid var(--line);background:var(--paper)}
+footer{text-align:center;padding:48px 24px;background:var(--ink);color:rgba(250,247,242,.45);font:.65rem 'Courier New',monospace;letter-spacing:.3em;text-transform:uppercase}
+#lb{display:none;position:fixed;inset:0;background:rgba(10,8,5,.96);z-index:100;align-items:center;justify-content:center;cursor:zoom-out}
+#lb.on{display:flex}#lb img{max-width:92vw;max-height:94vh;object-fit:contain}
+#lb .x,#lb .a{position:absolute;color:#fff;opacity:.6;cursor:pointer;user-select:none;font-size:2rem}
+#lb .x{top:14px;right:20px}#lb .p{left:16px;top:50%}#lb .n{right:16px;top:50%}#lb .a:hover,#lb .x:hover{opacity:1}
+</style></head><body>
+<header><h1>Lufsuljóð Jens</h1><p>— handritin óbreytt —</p></header>
+<nav><a href="#bindi1"><b>1</b>Best í heimi</a><a href="#bindi2"><b>2</b>Fyrir ungt fólk og fleiri</a><a href="#bindi3"><b>3</b>My Icelandic Life</a><a href="#bindi4"><b>4</b>Þegar álfarnir flytja</a><a href="#bindi5"><b>5</b>Bananalýðveldi</a></nav>
+<main><section id="bindi1"><h2><small>Bindi 1</small>Best í heimi</h2><div class="pages"><figure class="pg"><img src="images/bindi1_sida1.jpg" alt="Bindi 1, síða 1" loading="lazy" width="1653" height="2339"><figcaption>Bindi 1 · Síða 1</figcaption></figure><figure class="pg"><img src="images/bindi1_sida2.jpg" alt="Bindi 1, síða 2" loading="lazy" width="1653" height="2339"><figcaption>Bindi 1 · Síða 2</figcaption></figure><figure class="pg"><img src="images/bindi1_sida3.jpg" alt="Bindi 1, síða 3" loading="lazy" width="1653" height="2339"><figcaption>Bindi 1 · Síða 3</figcaption></figure></div></section>
+<section id="bindi2"><h2><small>Bindi 2</small>Fyrir ungt fólk og fleiri</h2><div class="pages"><figure class="pg"><img src="images/bindi2_sida1.jpg" alt="Bindi 2, síða 1" loading="lazy" width="1653" height="2339"><figcaption>Bindi 2 · Síða 1</figcaption></figure><figure class="pg"><img src="images/bindi2_sida2.jpg" alt="Bindi 2, síða 2" loading="lazy" width="1653" height="2339"><figcaption>Bindi 2 · Síða 2</figcaption></figure><figure class="pg"><img src="images/bindi2_sida3.jpg" alt="Bindi 2, síða 3" loading="lazy" width="1653" height="2339"><figcaption>Bindi 2 · Síða 3</figcaption></figure></div></section>
+<section id="bindi3"><h2><small>Bindi 3</small>My Icelandic Life</h2><div class="pages"><figure class="pg"><img src="images/bindi3_sida1.jpg" alt="Bindi 3, síða 1" loading="lazy" width="1653" height="2339"><figcaption>Bindi 3 · Síða 1</figcaption></figure><figure class="pg"><img src="images/bindi3_sida2.jpg" alt="Bindi 3, síða 2" loading="lazy" width="1653" height="2339"><figcaption>Bindi 3 · Síða 2</figcaption></figure><figure class="pg"><img src="images/bindi3_sida3.jpg" alt="Bindi 3, síða 3" loading="lazy" width="1653" height="2339"><figcaption>Bindi 3 · Síða 3</figcaption></figure></div></section>
+<section id="bindi4"><h2><small>Bindi 4</small>Þegar álfarnir flytja</h2><div class="pages"><figure class="pg"><img src="images/bindi4_sida1.jpg" alt="Bindi 4, síða 1" loading="lazy" width="1653" height="2339"><figcaption>Bindi 4 · Síða 1</figcaption></figure><figure class="pg"><img src="images/bindi4_sida2.jpg" alt="Bindi 4, síða 2" loading="lazy" width="1653" height="2339"><figcaption>Bindi 4 · Síða 2</figcaption></figure></div></section>
+<section id="bindi5"><h2><small>Bindi 5</small>Bananalýðveldi</h2><div class="pages"><figure class="pg"><img src="images/bindi5_sida1.jpg" alt="Bindi 5, síða 1" loading="lazy" width="1653" height="2339"><figcaption>Bindi 5 · Síða 1</figcaption></figure><figure class="pg"><img src="images/bindi5_sida2.jpg" alt="Bindi 5, síða 2" loading="lazy" width="1653" height="2339"><figcaption>Bindi 5 · Síða 2</figcaption></figure><figure class="pg"><img src="images/bindi5_sida3.jpg" alt="Bindi 5, síða 3" loading="lazy" width="1653" height="2339"><figcaption>Bindi 5 · Síða 3</figcaption></figure><figure class="pg"><img src="images/bindi5_sida4.jpg" alt="Bindi 5, síða 4" loading="lazy" width="1653" height="2339"><figcaption>Bindi 5 · Síða 4</figcaption></figure><figure class="pg"><img src="images/bindi5_sida5.jpg" alt="Bindi 5, síða 5" loading="lazy" width="1653" height="2339"><figcaption>Bindi 5 · Síða 5</figcaption></figure><figure class="pg"><img src="images/bindi5_sida6.jpg" alt="Bindi 5, síða 6" loading="lazy" width="1653" height="2339"><figcaption>Bindi 5 · Síða 6</figcaption></figure></div></section></main>
+<footer>Lufsuljóð Jens · 5 bindi · 17 síður</footer>
+<div id="lb"><span class="x">×</span><span class="a p">‹</span><img id="li" alt=""><span class="a n">›</span></div>
+<script>
+const f=[...document.querySelectorAll('.pg')],lb=document.getElementById('lb'),li=document.getElementById('li');let c=0;
+const show=i=>{c=(i+f.length)%f.length;li.src=f[c].querySelector('img').src;li.alt=f[c].querySelector('img').alt;lb.classList.add('on');document.body.style.overflow='hidden'};
+const hide=()=>{lb.classList.remove('on');document.body.style.overflow=''};
+f.forEach((e,i)=>e.addEventListener('click',()=>show(i)));
+lb.addEventListener('click',e=>{if(e.target.classList.contains('p'))show(c-1);else if(e.target.classList.contains('n'))show(c+1);else if(e.target!==li)hide()});
+addEventListener('keydown',e=>{if(!lb.classList.contains('on'))return;if(e.key==='Escape')hide();if(e.key==='ArrowLeft')show(c-1);if(e.key==='ArrowRight')show(c+1)});
+</script></body></html>
