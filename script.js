@@ -4,19 +4,25 @@ const items = document.querySelectorAll('.item');
 
 filterBtns.forEach(btn => {
   btn.addEventListener('click', () => {
-    filterBtns.forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-
     const filter = btn.dataset.filter;
-    items.forEach(item => {
-      if (filter === 'all' || item.dataset.category === filter) {
-        item.classList.remove('hidden');
-      } else {
-        item.classList.add('hidden');
-      }
-    });
+    location.hash = filter === 'all' ? '' : filter;
+    applyFilter(filter);
   });
 });
+
+// Apply filter function
+function applyFilter(filter) {
+  filterBtns.forEach(b => b.classList.toggle('active', b.dataset.filter === filter));
+  items.forEach(item => {
+    const cat = item.dataset.category;
+    const show = filter === 'all' ? cat !== 'gursky' : cat === filter;
+    item.classList.toggle('hidden', !show);
+  });
+}
+
+// Init: read hash or default to "all"
+const initFilter = location.hash.replace('#', '') || 'all';
+applyFilter(initFilter);
 
 // Lightbox
 const lightbox = document.getElementById('lightbox');
